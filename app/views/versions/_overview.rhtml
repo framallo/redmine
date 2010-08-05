@@ -25,3 +25,13 @@
 <% else %>
     <p><em><%= l(:label_roadmap_no_issues) %></em></p>
 <% end %>
+<% if version.estimated_hours > 0 || User.current.allowed_to?(:view_time_entries, version.project) %>
+<p>
+  <%= l(:field_estimated_hours) %> <%= html_hours(l_hours(version.estimated_hours)) %>
+  <% if User.current.allowed_to?(:view_time_entries, version.project) %>
+    -
+    <%= l(:label_spent_time) %>
+    <%= html_hours(l_hours(version.spent_hours)) %>
+  <% end %>
+</p>
+<% end %>

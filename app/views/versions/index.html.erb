@@ -12,11 +12,19 @@
     <% if (issues = @issues_by_version[version]) && issues.size > 0 %>
     <% form_tag({}) do -%>	
     <table class="list related-issues">
-    <caption><%= l(:label_related_issues) %></caption>
+      <tr>
+        <td><%= l(:label_related_issues) %></td>
+        <td><%=l(:field_estimated_hours)%></td>
+        <td><%=l(:label_spent_time)%></td>
+      </tr>
     <%- issues.each do |issue| -%>
       <tr class="hascontextmenu">
         <td class="checkbox"><%= check_box_tag 'ids[]', issue.id %></td>
         <td><%= link_to_issue(issue, :project => (@project != issue.project)) %></td>
+        <% if User.current.allowed_to?(:view_time_entries, @project) %>
+        <td><%= l_hours(issue.estimated_hours)%></td>
+        <td><%= issue.spent_hours > 0 ? (link_to l_hours(issue.spent_hours), {:controller => 'timelog', :action => 'details', :project_id => @project, :issue_id => issue}) : "-" %></td>
+        <%end%>
       </tr>
     <%- end -%>
     </table>
