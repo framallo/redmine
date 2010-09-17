@@ -1,0 +1,21 @@
+[submodule "vendor/plugins/redmine-gitosis"]
+	path = vendor/plugins/redmine-gitosis
+	url = git://github.com/framallo/redmine-gitosis.git
+[submodule "vendor/plugins/budget_plugin"]
+	path = vendor/plugins/budget_plugin
+	url = git://github.com/edavis10/redmine-budget-plugin.git
+[submodule "vendor/plugins/redmine_rate"]
+	path = vendor/plugins/redmine_rate
+	url = git://github.com/edavis10/redmine_rate.git
+[submodule "vendor/plugins/redmine_s3"]
+	path = vendor/plugins/redmine_s3
+	url = git://github.com/tigrish/redmine_s3.git
+[submodule "vendor/plugins/redmine_scrumdashboard"]
+	path = vendor/plugins/redmine_scrumdashboard
+	url = git://github.com/thus/redmine-scrumdashboard-plugin.git
+[submodule "vendor/plugins/redmine_subtasks"]
+	path = vendor/plugins/redmine_subtasks
+	url = git://github.com/hron/redmine_subtasks.git
+[submodule "vendor/plugins/redmine_ultraviolet"]
+	path = vendor/plugins/redmine_ultraviolet
+	url = http://github.com/epitron/redmine_ultraviolet.git
