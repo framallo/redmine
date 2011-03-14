@@ -17,10 +17,21 @@ GEM
     activeresource (2.3.5)
       activesupport (= 2.3.5)
     activesupport (2.3.5)
+    bones (3.6.5)
+      little-plugger (>= 1.1.2)
+      loquacious (>= 1.7.0)
+      rake (>= 0.8.7)
+    bones-git (1.2.4)
+      bones (>= 3.6)
+      git (>= 1.2.5)
     columnize (0.3.2)
+    git (1.2.5)
     linecache (0.43)
+    little-plugger (1.1.2)
     lockfile (1.4.3)
+    loquacious (1.7.1)
     mysql (2.8.1)
+    orderedhash (0.0.6)
     rack (1.0.1)
     rails (2.3.5)
       actionmailer (= 2.3.5)
@@ -41,9 +52,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bones (>= 3.4.7)
+  bones-git
   inifile!
   lockfile
   mysql
+  orderedhash (>= 0.0.6)
   rails (= 2.3.5)
   ruby-debug
   rubytree
