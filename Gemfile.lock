@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/framallo/inifile.git
+  revision: ab4fa3d5403dfdd520b6cdfd998ed843b159f945
+  specs:
+    inifile (0.3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -35,6 +41,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  inifile!
   lockfile
   mysql
   rails (= 2.3.5)
