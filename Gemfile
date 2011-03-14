@@ -10,6 +10,7 @@ gem 'inifile', :git => "git://github.com/framallo/inifile.git"
 gem 'bones-git', ">= 0"
 gem 'bones', ">= 3.4.7"
 gem 'orderedhash', ">= 0.0.6"
+gem 'net-ssh', :require => 'net/ssh'
 
 
 group :development do
