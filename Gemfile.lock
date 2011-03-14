@@ -13,6 +13,7 @@ GEM
     activesupport (2.3.5)
     columnize (0.3.2)
     linecache (0.43)
+    lockfile (1.4.3)
     mysql (2.8.1)
     rack (1.0.1)
     rails (2.3.5)
@@ -34,6 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  lockfile
   mysql
   rails (= 2.3.5)
   ruby-debug
