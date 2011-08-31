@@ -12,6 +12,7 @@ gem 'bones', ">= 3.4.7"
 gem 'orderedhash', ">= 0.0.6"
 gem 'net-ssh', :require => 'net/ssh'
 gem 'ultraviolet', :require => 'uv'
+gem 'unicorn'
 
 
 group :development do
