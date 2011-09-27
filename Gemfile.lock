@@ -12,6 +12,7 @@ GEM
       activesupport (= 2.3.4)
     activesupport (2.3.4)
     columnize (0.3.2)
+    kgio (2.6.0)
     linecache (0.43)
     pg (0.11.0)
     rack (1.0.1)
@@ -22,6 +23,7 @@ GEM
       activeresource (= 2.3.4)
       activesupport (= 2.3.4)
       rake (>= 0.8.3)
+    raindrops (0.7.0)
     rake (0.8.7)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
@@ -29,6 +31,10 @@ GEM
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
     rubytree (0.8.1)
+    unicorn (4.1.1)
+      kgio (~> 2.4)
+      rack
+      raindrops (~> 0.6)
 
 PLATFORMS
   ruby
@@ -38,3 +44,4 @@ DEPENDENCIES
   rails (= 2.3.4)
   ruby-debug
   rubytree
+  unicorn
